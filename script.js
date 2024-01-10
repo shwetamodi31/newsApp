@@ -146,7 +146,7 @@ $(document).ready((a) => {
       //   $("#weather").html(data.main.temp);
 
       $("#weather").html(wtrString);
-      var icon = data.weather[0].icon;
+      var icon = data.weather.icon;
       var iconUrl = `https://openweathermap.org/img/wn/10d@2x.png`;
       $("#weatherIcon").attr("src", iconUrl);
     }
